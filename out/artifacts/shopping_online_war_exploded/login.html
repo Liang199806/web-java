@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户登录</title>
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+
+        body{
+            color:#333;
+        }
+
+        header{
+            height: 60px;
+            background-color: rgb(244, 224, 189);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .container{
+            width: 85%;
+            margin: 0 auto;
+            display: flex;
+            background-color: #FFFFFF;
+            display: flex;
+            padding: 5px 5px 5px 5px;
+        }
+        .row{
+            text-align: center;
+            background-color: #1ff;
+            border-radius: 20px;
+            width: 600px;
+            height: 350px;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+        .row input{
+            width: 75%;
+            height: 50px;
+            border-radius: 10px;
+            margin-top:10px;
+            margin-bottom:10px;
+            outline:none;
+            border: none;
+        }
+        .row h2{
+            margin-bottom:30px;
+            text-align: center; /*让首行文字居中*/
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h2>网上购物</h2>
+</header>
+<div class="row">
+    <h2>账户登录</h2>
+    <form action="/login.do" method="get">
+        <input type="text" name="account">
+        <br>
+        <input type="password" name="password">
+        <br>
+        <input type="submit" value="登录">
+    </form>
+
+</div>
+</body>
+</html>
