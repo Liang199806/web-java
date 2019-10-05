@@ -46,7 +46,7 @@
       color:#333;
     }
     header{
-      height: 60px;
+      height: 50px;
       background-color: rgb(244, 224, 189);
       display: flex;
       align-items: center;
@@ -55,17 +55,22 @@
       padding-right: 15px;
     }
 
-    .nav{
-      flex: 0 0 50%;
+    .nav ul{
       list-style: none;
       display: flex;
+      padding: auto 10px auto 10px;
     }
-    .nav li{
-      margin-left: 10px;
-      margin-right: 10px;
-      width: 50px;
+
+    .nav ul li{
+      align-items: center;
+      margin-left: 20px;
+      margin-right: 20px;
+      width: 80px;
 
     }
+
+
+
 
     .user-info{
       padding-right: 20px ;
@@ -75,9 +80,11 @@
       text-decoration: none;
       color:#000;
     }
+
     .nav li a:hover {
       color:#fff;
     }
+
     /* 搜索区样式 */
     .search-wrap{
       height: 60px;

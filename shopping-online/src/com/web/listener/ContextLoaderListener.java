@@ -36,14 +36,18 @@ public class ContextLoaderListener implements ServletContextListener {
         };
         userList = Arrays.asList(users);
 
-        List<Commodity> commodityList=new ArrayList<>(6);
+        List<Commodity> commodityList=new ArrayList<>(9);
         Commodity[] commodities={
-                new Commodity(1,"历史与传奇","1.jpg","张佳玮"),
-                new Commodity(2,"摘星","2.jpg","付强"),
-                new Commodity(3,"唐诗宋词简介","3.jpg","戴建业"),
-                new Commodity(4,"一生自在","4.jpg","季羡林"),
-                new Commodity(5,"优势成长","5.jpg","帅建祥"),
-                new Commodity(6,"人性的弱点","6.jpg","[美]戴尔·卡耐基")
+                new Commodity(1,"策霸老爹鞋","1.jpg","服饰运动"),
+                new Commodity(2,"双星健步鞋","2.jpg","服饰运动"),
+                new Commodity(3,"南极人床单","3.jpg","生活"),
+                new Commodity(4,"361男鞋","4.jpg","服饰运动"),
+                new Commodity(5,"华为 mate 30","5.jpg","手机"),
+                new Commodity(6,"OPPO Reno Ace","6.jpg","手机"),
+                new Commodity(7,"神舟","7.jpg","电脑"),
+                new Commodity(8,"惠普","8.jpg","电脑"),
+                new Commodity(9,"康佳","9.jpg","电脑"),
+                new Commodity(10,"格力","10.jpg","家电")
         };
         commodityList = Arrays.asList(commodities);
 

@@ -4,6 +4,24 @@
     <meta charset="UTF-8">
     <title>用户登录</title>
     <style>
+        @font-face {
+            font-family: 'iconfont';
+            src: url('//at.alicdn.com/t/font_1427254_qm1jfg7xsu.eot');
+            src: url('//at.alicdn.com/t/font_1427254_qm1jfg7xsu.eot?#iefix') format('embedded-opentype'),
+            url('//at.alicdn.com/t/font_1427254_qm1jfg7xsu.woff2') format('woff2'),
+            url('//at.alicdn.com/t/font_1427254_qm1jfg7xsu.woff') format('woff'),
+            url('//at.alicdn.com/t/font_1427254_qm1jfg7xsu.ttf') format('truetype'),
+            url('//at.alicdn.com/t/font_1427254_qm1jfg7xsu.svg#iconfont') format('svg');
+        }
+
+        .iconfont {
+            font-family: "iconfont", serif !important;
+            font-size: 28px;
+            font-style: normal;
+            -webkit-font-smoothing: antialiased;
+            -webkit-text-stroke-width: 0;
+            -moz-osx-font-smoothing: grayscale;
+        }
         *{
             margin:0;
             padding: 0;
@@ -22,31 +40,23 @@
             padding-left: 15px;
             padding-right: 15px;
         }
-        .container{
-            width: 85%;
-            margin: 0 auto;
-            display: flex;
-            background-color: #FFFFFF;
-            display: flex;
-            padding: 5px 5px 5px 5px;
+
+        a{
+            text-decoration: none;
+            color:#000;
         }
         .row{
             text-align: center;
             background-color: #1ff;
-            border-radius: 20px;
-            width: 600px;
-            height: 350px;
-            margin: auto;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
+
+            width: 400px;
+            height: 450px;
+            margin: 100px 100px 100px 800px;
         }
         .row input{
             width: 75%;
-            height: 50px;
-            border-radius: 10px;
+            height: 40px;
+
             margin-top:10px;
             margin-bottom:10px;
             outline:none;
@@ -56,22 +66,129 @@
             margin-bottom:30px;
             text-align: center; /*让首行文字居中*/
         }
+        .sign-box {
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .sign-box p{
+            flex: 1 1 50%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-right: 10px;
+            padding-bottom: 5px;
+        }
+        .default {
+            color: #000;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .active {
+            color: rgb(255, 102, 0);
+            border-bottom: 1px solid rgb(255, 102, 0);
+        }
+        .btn {
+            width: 73%;
+            margin: 0 auto;
+            height: 33px;
+            border: none;
+            outline: none;
+            border-radius: 3px;
+            background-color: rgb(255, 102, 0);
+            color: #fff;
+            box-shadow: 2px 5px 10px #aaa;
+        }
+        .line-box {
+            width: 80%;
+            margin-top: 10px;
+            display: inline-flex;
+            align-items: center;
+        }
+
+        /*线条样式*/
+        .line {
+            border-bottom: 1px solid #9b9b9b;
+            flex: 0 0 33%;
+        }
+        .login-3rd {
+            flex: 0 0 30%;
+            color: #9b9b9b;
+            font-size: 11px;
+            text-align: center;
+        }
+        form div {
+            margin: 15px auto 10px auto;
+        }
+        .login-3rd {
+            flex: 0 0 30%;
+            color: #9b9b9b;
+            font-size: 11px;
+            text-align: center;
+        }
+
+        /*图标外层包裹区样式*/
+        .icon-box {
+            width: 50%;
+            display: inline-flex;
+            justify-content: center;
+            margin-top: 5px;
+        }
+
+        /*图标样式*/
+        .icon-box i {
+            flex: 0 0 33%;
+        }
+
+        body {
+            background-image: url("images/001.jpg");
+            background-size: cover;
+            background-blend-mode: luminosity;
+        }
     </style>
 </head>
 <body>
 <header>
-    <h2>网上购物</h2>
+    <a href="/index">
+        <h2>网上购物</h2>
+    </a>
 </header>
 <div class="row">
-    <h2>账户登录</h2>
     <form action="/login.do" method="get">
-        <input type="text" name="account">
-        <br>
-        <input type="password" name="password">
-        <br>
-        <input type="submit" value="登录">
+        <div class="sign-box">
+            <p class="default">扫码登录</p>
+            <p class="active">账户登录</p>
+        </div>
+        <div>
+            <label>
+                <input type="text" name="account" class="input-box" placeholder="请输入手机号或邮箱">
+            </label>
+        </div>
+
+        <div>
+            <label>
+                <input type="password" name="password" class="input-box"placeholder="请输入密码">
+            </label>
+        </div>
+
+        <div>
+            <label>
+                <input type="submit" value="立即登录" class="btn">
+            </label>
+        </div>
+        <div class="line-box">
+            <span class="line"></span>
+            <span class="login-3rd">使用以下账号登录</span>
+            <span class="line"></span>
+        </div>
+        <div class="icon-box">
+            <i class="iconfont" style="color: rgb(81, 195, 50)">&#xe600;</i>
+            <i class="iconfont" style="color: rgb(48, 165, 221)">&#xe73e;</i>
+            <i class="iconfont" style="color: rgb(230, 23, 45)">&#xe636;</i>
+        </div>
     </form>
 
 </div>
+
 </body>
 </html>

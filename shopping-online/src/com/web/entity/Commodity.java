@@ -12,6 +12,7 @@ public class Commodity {
     private String name;
     private String cover;
     private String category;
+    private Double price;
 
     public Commodity(Integer id, String name, String cover, String category) {
         this.id = id;

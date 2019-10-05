@@ -13,9 +13,9 @@
 %>
 
 <header>
-    <div >
+    <div class="nav" >
         <!-- 导航 -->
-        <ul class="nav">
+        <ul >
             <li>
                 <a href="${pageContext.request.contextPath}/index">首页</a>
             </li>
@@ -31,12 +31,12 @@
 
         </ul>
     </div>
-    <div >
-        <ul class="nav">
+    <div class="nav">
+        <ul >
             <%
                 if (user != null) {
             %>
-            <li>
+            <li >
                 <a href="${pageContext.request.contextPath}/user">
                     <img src="${pageContext.request.contextPath}/images/${user.avatar}" alt="" class="avatar1">
                 </a>
@@ -56,7 +56,9 @@
                 </a></h2>
             </li>
             <li>
-                去登录
+                <a href="${pageContext.request.contextPath}/login" >
+                    去登录
+                </a>
             </li>
 
             <%
