@@ -56,6 +56,7 @@
     }
 
     .nav ul{
+      align-items: center;
       list-style: none;
       display: flex;
       padding: auto 10px auto 10px;
@@ -84,11 +85,18 @@
     .nav li a:hover {
       color:#fff;
     }
+    a{
+      text-decoration: none;
+      color:#000;
+    }
+    a:hover{
+      color:#ddd;
+    }
 
     /* 搜索区样式 */
     .search-wrap{
       height: 60px;
-      background-color: #ddd;
+      background-color: rgb(255, 119, 0);
       display: flex;
       align-items: center;
       padding-left: 10%;
@@ -169,8 +177,8 @@
     }
     .avatar1{
       border-radius: 50%;
-      width: 60px;
-      height: 60px;
+      width: 50px;
+      height: 50px;
     }
     .description{
       width:80%;
@@ -183,13 +191,19 @@
       width: 40px;
       height: 40px;
       border-radius: 5px;
-      background-color: rgba(0);
-
-
+      background-color: rgb(255, 119, 0);
       font-size: 16px;
       outline:none;
       border: none;
       padding-top:-20px;
+    }
+    .btn1{
+      width: 40px;
+      height: 40px;
+      border-radius: 5px;
+      background-color: rgb(244, 224, 189);
+      outline:none;
+      border: none;
     }
 
   </style>
@@ -206,7 +220,9 @@
 
 <!-- 搜索区 -->
 <div class="search-wrap">
-  <img src="images/苏宁易购.png">
+  <h2>
+    在线购物
+  </h2>
   <input type="text" placeholder="输入要搜索的内容" class="input-box">
   <button type="button" class="btn">
     <i class="iconfont" style="font-size: 30px;  color:#000000;">&#xe651;</i>
@@ -215,7 +231,7 @@
 
 <div class="container">
   <div class="left">
-    <h2>好书精选</h2>
+    <h2>今日推荐</h2>
     <hr>
     <div class="row">
       <%
@@ -227,12 +243,46 @@
           <img src="images/${commodity.cover}" class="avatar">
         </a>
         <p>${commodity.name}</p>
-        <p>${commodity.category}</p>
+        ￥：${commodity.price}
       </div>
       <%
         }
       %>
-
+    </div>
+  </div>
+  <div class="right">
+    <h2>分类</h2>
+    <div class="row-zongxiang">
+      <div class="column1">
+        <a href="#"><h3>家用电器</h3></a>
+        <br>
+        <p><a href="#">电视</a> <a href="#">空调</a> <a href="#">洗衣机</a> <a href="#">冰箱</a> <a href="#">厨卫大电</a> </p>
+      </div>
+      <div class="column1">
+        <a href="#"><h3>家居</h3></a>
+        <br>
+        <p><a href="#">家具</a> <a href="#">生活日用</a> <a href="#">家装软饰</a> <a href="#">灯具</a> <a href="#">家纺</a> <a href="#">厨具</a></p>
+      </div>
+      <div class="column1">
+        <h3>女鞋</h3>
+        <br>
+        <p>马丁靴 雪地靴 踝靴 休闲鞋 单鞋 帆布鞋 妈妈鞋</p>
+      </div>
+      <div class="column1">
+        <h3>运动</h3>
+        <br>
+        <p>山地车 公路车 折叠车 骑行服 电动车 电动滑板车 城市自行车 平衡车 穿戴装备 </p>
+      </div>
+      <div class="column1">
+        <h3>工具</h3>
+        <br>
+        <p>手动工具 电动工具 测量工具 气动工具 工具套装 工具配件</p>
+      </div>
+      <div class="column1">
+        <h3>办公设备</h3>
+        <br>
+        <p>投影机 投影配件 多功能一体机 打印机 传真设备 验钞/点钞机 扫描设备 复合机</p>
+      </div>
     </div>
   </div>
 </div>

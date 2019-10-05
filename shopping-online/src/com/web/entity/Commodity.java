@@ -13,15 +13,34 @@ public class Commodity {
     private String cover;
     private String category;
     private Double price;
+    private String xq;
 
-    public Commodity(Integer id, String name, String cover, String category) {
+    public Commodity(Integer id, String name, String cover, String category, Double price,String xq) {
         this.id = id;
         this.name = name;
         this.cover = cover;
         this.category = category;
+        this.price=price;
+        this.xq=xq;
     }
 
     public Commodity() {
+    }
+
+    public String getXq() {
+        return xq;
+    }
+
+    public void setXq(String xq) {
+        this.xq = xq;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
     }
 
     public Integer getId() {
@@ -39,6 +58,7 @@ public class Commodity {
     public void setName(String name) {
         this.name = name;
     }
+
 
     public String getCover() {
         return cover;
@@ -63,6 +83,9 @@ public class Commodity {
                 ", name='" + name + '\'' +
                 ", cover='" + cover + '\'' +
                 ", category='" + category + '\'' +
+                ", price=" + price +
+                ", xq='" + xq + '\'' +
                 '}';
     }
+
 }

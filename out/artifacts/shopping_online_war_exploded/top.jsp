@@ -50,7 +50,7 @@
             %>
             <li>
                 <h2><a href="${pageContext.request.contextPath}/login">
-                    <button type="button" class="btn">
+                    <button type="button" class="btn1">
                         <i class="iconfont" style="font-size: 30px;  color:#000000;">&#xe61d;</i>
                     </button>
                 </a></h2>

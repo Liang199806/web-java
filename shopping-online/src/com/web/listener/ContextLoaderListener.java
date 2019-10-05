@@ -30,24 +30,23 @@ public class ContextLoaderListener implements ServletContextListener {
     public void contextInitialized(ServletContextEvent sce) {
         List<User> userList = new ArrayList<>(3);
         User[] users={
-                new User(1,"aaa@qq.com","111","迅捷小子","1.jpg","江苏", LocalDate.of(2018,6,11)),
-                new User(2,"bbb@qq.com","111","迅捷小子","2.jpg","江苏",LocalDate.of(2018,6,11)),
-                new User(3,"ccc@qq.com","111","迅捷小子","3.jpg","江苏",LocalDate.of(2018,6,11))
+                new User(1,"aaa@qq.com","111","迅捷小子","2-1.jpg","江苏", LocalDate.of(2018,6,11)),
+                new User(1,"bbb@qq.com","111","迅捷小子","2-2.jpg","江苏",LocalDate.of(2018,6,11)),
+                new User(1,"ccc@qq.com","111","迅捷小子","2-3.jpg","江苏",LocalDate.of(2018,6,11))
         };
         userList = Arrays.asList(users);
 
         List<Commodity> commodityList=new ArrayList<>(9);
         Commodity[] commodities={
-                new Commodity(1,"策霸老爹鞋","1.jpg","服饰运动"),
-                new Commodity(2,"双星健步鞋","2.jpg","服饰运动"),
-                new Commodity(3,"南极人床单","3.jpg","生活"),
-                new Commodity(4,"361男鞋","4.jpg","服饰运动"),
-                new Commodity(5,"华为 mate 30","5.jpg","手机"),
-                new Commodity(6,"OPPO Reno Ace","6.jpg","手机"),
-                new Commodity(7,"神舟","7.jpg","电脑"),
-                new Commodity(8,"惠普","8.jpg","电脑"),
-                new Commodity(9,"康佳","9.jpg","电脑"),
-                new Commodity(10,"格力","10.jpg","家电")
+                new Commodity(1,"策霸老爹鞋","1-1.jpg","服饰运动",256.00,"策霸2019秋季老爹鞋学生休闲跑步鞋潮女新款韩版透气网面运动鞋女ins 657黑米 35码"),
+                new Commodity(2,"双星健步鞋","1-2.jpg","服饰运动",188.00,""),
+                new Commodity(3,"南极人床单","1-3.jpg","生活",199.00,""),
+                new Commodity(4,"361男鞋","1-4.jpg","服饰运动",266.00,""),
+                new Commodity(5,"华为 mate 30","1-5.jpg","手机",4999.00,""),
+                new Commodity(6,"OPPO Reno Ace","1-6.jpg","手机",3999.00,""),
+                new Commodity(7,"神舟","1-7.jpg","电脑",5999.00,""),
+                new Commodity(8,"惠普","1-8.jpg","电脑",5699.00,""),
+                new Commodity(9,"康佳","1-9.jpg","电脑",3999.00,"")
         };
         commodityList = Arrays.asList(commodities);
 
