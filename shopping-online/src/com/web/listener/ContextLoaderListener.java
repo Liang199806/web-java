@@ -14,7 +14,7 @@ import java.util.Arrays;
 import java.util.List;
 
 /**
- * @author tj
+ * @author liang
  * @ClassName ContextLoaderListener
  * @Description TODO
  * @Date 2019/10/4
@@ -31,24 +31,24 @@ public class ContextLoaderListener implements ServletContextListener {
         //创建并生成用户数据列表
         List<User> userList = new ArrayList<>(3);
         User[] users={
-                new User(1,"aaa@qq.com","111","迅捷小子","2-1.jpg","江苏", LocalDate.of(2018,6,11)),
-                new User(1,"bbb@qq.com","111","迅捷小子","2-2.jpg","江苏",LocalDate.of(2018,6,11)),
-                new User(1,"ccc@qq.com","111","迅捷小子","2-3.jpg","江苏",LocalDate.of(2018,6,11))
+                new User(1,"liang1","111","大神1","2-4.jpg","江苏", LocalDate.of(2018,6,11)),
+                new User(1,"liang2","111","大神2","2-2.jpg","江苏",LocalDate.of(2018,6,11)),
+                new User(1,"liang3","111","大神3","2-3.jpg","江苏",LocalDate.of(2018,6,11))
         };
         userList = Arrays.asList(users);
 
         //创建并生成货物数据列表
         List<Commodity> commodityList=new ArrayList<>(9);
         Commodity[] commodities={
-                new Commodity(1,"策霸老爹鞋","1-1.jpg","服饰运动",256.00,"策霸2019秋季老爹鞋学生休闲跑步鞋潮女新款韩版透气网面运动鞋女ins 657黑米 35码"),
-                new Commodity(2,"双星健步鞋","1-2.jpg","服饰运动",188.00,""),
-                new Commodity(3,"南极人床单","1-3.jpg","生活",199.00,""),
-                new Commodity(4,"361男鞋","1-4.jpg","服饰运动",266.00,""),
-                new Commodity(5,"华为 mate 30","1-5.jpg","手机",4999.00,""),
-                new Commodity(6,"OPPO Reno Ace","1-6.jpg","手机",3999.00,""),
-                new Commodity(7,"神舟","1-7.jpg","电脑",5999.00,""),
-                new Commodity(8,"惠普","1-8.jpg","电脑",5699.00,""),
-                new Commodity(9,"康佳","1-9.jpg","电脑",3999.00,"")
+                new Commodity(1,"李宁 音速7","1-11.jpg","服饰运动",459.00,"李宁音速7代19夏季新款男专业比赛中帮减震实战篮球鞋"),
+                new Commodity(2,"潮流工装裤（男）","1-12.jpg","服饰运动",188.00,""),
+                new Commodity(3,"健身衣","1-13.jpg","服饰运动",399.00,""),
+                new Commodity(4,"老人帽","1-14.jpg","帽子",59.00,""),
+                new Commodity(5,"iphone xr手机壳","1-15.jpg","手机",49.00,""),
+                new Commodity(6,"电脑包","1-16.jpg","电脑",399.00,""),
+                new Commodity(7,"雷神鼠标","1-17.jpg","电脑",599.00,""),
+                new Commodity(8,"音响","1-18.jpg","电脑",569.00,""),
+                new Commodity(9,"电脑椅","1-19.jpg","家具",399.00,"")
         };
         commodityList = Arrays.asList(commodities);
 

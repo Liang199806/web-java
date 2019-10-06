@@ -1,7 +1,7 @@
 <%@ page import="com.web.entity.Commodity" %>
 <%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
-  User: tj
+  User: liang
   Date: 2019/10/2
   Time: 13:18
   To change this template use File | Settings | File Templates.

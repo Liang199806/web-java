@@ -1,6 +1,6 @@
 <%@ page import="com.web.entity.User" %><%--
   Created by IntelliJ IDEA.
-  User: tj
+  User: liang
   Date: 2019/10/4
   Time: 10:30
   To change this template use File | Settings | File Templates.
@@ -333,19 +333,19 @@
                 <br>
                 <div class="read">
                     <p><a href="">${user.nickname}</a>购买了
-                        <a href="">华为 mate 30</a>
+                        <a href="">李宁 音速7</a>
                     </p>
                     <p style="color: #9b9b9b;">2018年1月2日</p>
                 </div>
                 <div class="read">
                     <p><a href="">${user.nickname}</a>购买了
-                        <a href="">双星健步鞋</a>
+                        <a href="">老人帽</a>
                     </p>
                     <p style="color: #9b9b9b;">2018年1月2日</p>
                 </div>
                 <div class="read">
                     <p><a href="">${user.nickname}</a>购买了
-                        <a href="">神舟电脑</a>
+                        <a href="">雷神鼠标</a>
                     </p>
                     <p style="color: #9b9b9b;">2018年1月2日</p>
                 </div>

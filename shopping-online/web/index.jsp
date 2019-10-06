@@ -1,7 +1,7 @@
 <%@ page import="com.web.entity.Commodity" %>
 <%@ page import="java.util.List" %><%--
   Created by IntelliJ IDEA.
-  User: tj
+  User: liang
   Date: 2019/10/3
   Time: 8:06
   To change this template use File | Settings | File Templates.
@@ -47,7 +47,7 @@
     }
     header{
       height: 50px;
-      background-color: rgb(244, 224, 189);
+      background-color: rgb(215, 232, 251);
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -96,7 +96,7 @@
     /* 搜索区样式 */
     .search-wrap{
       height: 60px;
-      background-color: rgb(255, 119, 0);
+      background-color: rgb(148, 198, 250);
       display: flex;
       align-items: center;
       padding-left: 10%;
@@ -191,7 +191,7 @@
       width: 40px;
       height: 40px;
       border-radius: 5px;
-      background-color: rgb(255, 119, 0);
+      background-color: rgb(148, 198, 250);
       font-size: 16px;
       outline:none;
       border: none;
@@ -201,7 +201,7 @@
       width: 40px;
       height: 40px;
       border-radius: 5px;
-      background-color: rgb(244, 224, 189);
+      background-color: rgb(215, 232, 251);
       outline:none;
       border: none;
     }
@@ -221,9 +221,9 @@
 <!-- 搜索区 -->
 <div class="search-wrap">
   <h2>
-    在线购物
+    在线商城
   </h2>
-  <input type="text" placeholder="输入要搜索的内容" class="input-box">
+  <input type="text" placeholder="请输入想要搜索的物品" class="input-box">
   <button type="button" class="btn">
     <i class="iconfont" style="font-size: 30px;  color:#000000;">&#xe651;</i>
   </button>
@@ -251,32 +251,17 @@
     </div>
   </div>
   <div class="right">
-    <h2>分类</h2>
+    <h2>物品分类</h2>
     <div class="row-zongxiang">
+      <div class="column1">
+        <a href="#"><h3>生活用品</h3></a>
+        <br>
+        <p><a href="#">牙刷</a> <a href="#">毛巾</a> <a href="#">面纸</a> <a href="#">水杯</a> <a href="#">镜子</a> </p>
+      </div>
       <div class="column1">
         <a href="#"><h3>家用电器</h3></a>
         <br>
-        <p><a href="#">电视</a> <a href="#">空调</a> <a href="#">洗衣机</a> <a href="#">冰箱</a> <a href="#">厨卫大电</a> </p>
-      </div>
-      <div class="column1">
-        <a href="#"><h3>家居</h3></a>
-        <br>
-        <p><a href="#">家具</a> <a href="#">生活日用</a> <a href="#">家装软饰</a> <a href="#">灯具</a> <a href="#">家纺</a> <a href="#">厨具</a></p>
-      </div>
-      <div class="column1">
-        <h3>女鞋</h3>
-        <br>
-        <p>马丁靴 雪地靴 踝靴 休闲鞋 单鞋 帆布鞋 妈妈鞋</p>
-      </div>
-      <div class="column1">
-        <h3>运动</h3>
-        <br>
-        <p>山地车 公路车 折叠车 骑行服 电动车 电动滑板车 城市自行车 平衡车 穿戴装备 </p>
-      </div>
-      <div class="column1">
-        <h3>工具</h3>
-        <br>
-        <p>手动工具 电动工具 测量工具 气动工具 工具套装 工具配件</p>
+        <p><a href="#">洗衣机</a> <a href="#">电水壶</a> <a href="#">电风扇</a> <a href="#">空调</a> <a href="#">电视机</a> <a href="#">电脑</a></p>
       </div>
       <div class="column1">
         <h3>办公设备</h3>

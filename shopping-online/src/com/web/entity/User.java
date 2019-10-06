@@ -3,7 +3,7 @@ package com.web.entity;
 import java.time.LocalDate;
 
 /**
- * @author tj
+ * @author liang
  * @ClassName User
  * @Description TODO
  * @Date 2019/10/4
