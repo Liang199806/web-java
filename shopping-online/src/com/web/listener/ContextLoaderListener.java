@@ -28,6 +28,7 @@ public class ContextLoaderListener implements ServletContextListener {
      */
     @Override
     public void contextInitialized(ServletContextEvent sce) {
+        //创建并生成用户数据列表
         List<User> userList = new ArrayList<>(3);
         User[] users={
                 new User(1,"aaa@qq.com","111","迅捷小子","2-1.jpg","江苏", LocalDate.of(2018,6,11)),
@@ -36,6 +37,7 @@ public class ContextLoaderListener implements ServletContextListener {
         };
         userList = Arrays.asList(users);
 
+        //创建并生成货物数据列表
         List<Commodity> commodityList=new ArrayList<>(9);
         Commodity[] commodities={
                 new Commodity(1,"策霸老爹鞋","1-1.jpg","服饰运动",256.00,"策霸2019秋季老爹鞋学生休闲跑步鞋潮女新款韩版透气网面运动鞋女ins 657黑米 35码"),
@@ -50,7 +52,9 @@ public class ContextLoaderListener implements ServletContextListener {
         };
         commodityList = Arrays.asList(commodities);
 
+        //获得全局变量
         ServletContext servletContext=sce.getServletContext();
+        //设置全局变量属性，将用户和货物列表数据记入，整个应用可以共享
         servletContext.setAttribute("userList",userList);
         servletContext.setAttribute("commodityList",commodityList);
         System.out.println("容器启动");

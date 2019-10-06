@@ -22,9 +22,12 @@ import java.util.List;
 public class IndexServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        //获得各个ServLeta共享对象
         ServletContext sc= this.getServletContext();
 
+        //取得全局应用对象中的变量
         List<Commodity> commodityList = (List<Commodity>) sc.getAttribute("commodityList");
+        //存入request
         req.setAttribute("commodityList",commodityList);
 //        resp.setContentType("text/plain;charset=utf-8");
 //        resp.getWriter().print(bookList.toString());
